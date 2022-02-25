@@ -10,40 +10,19 @@ let package = Package(
     products: [
         .library(
             name: "RtcBasic",
-            targets: [
-                "AgoraRtcKit", "AgoraCore", "Agoraffmpeg", "Agorafdkaac", "AgoraSoundTouch"
-            ]
-        ), .library(
-            name: "AINS",
-            targets: ["AgoraAIDenoiseExtension"]
-        ), .library(
-            name: "ContentInspect",
-            targets: ["AgoraCIExtension"]
-        ), .library(
-            name: "AV1Dec",
-            targets: ["AgoraDav1dExtension"]
-        ), .library(
-            name: "ROIEnc",
-            targets: ["AgoraFDExtension"]
-        ), .library(
-            name: "FullAudioFormat",
-            targets: ["AgoraFullAudioFormatExtension"]
-        ), .library(
-            name: "JND",
-            targets: ["AgoraJNDExtension"]
-        ), .library(
-            name: "ReplayKit",
-            targets: ["AgoraReplayKitExtension"]
-        ), .library(
-            name: "SuperResolution",
-            targets: ["AgoraSuperResolutionExtension"]
-        ), .library(
-            name: "VideoPreprocess",
-            targets: ["AgoraVideoProcessExtension"]
-        ), .library(
-            name: "VirtualBackground",
-            targets: ["AgoraVideoSegmentationExtension"]
-        )
+            targets: ["AgoraRtcKit", "AgoraCore", "Agoraffmpeg", "Agorafdkaac", "AgoraSoundTouch"]
+        ),
+
+        .library(name: "AINS", targets: ["AgoraAIDenoiseExtension"]),
+        .library(name: "ContentInspect", targets: ["AgoraCIExtension"]),
+        .library(name: "AV1Dec", targets: ["AgoraDav1dExtension"]),
+        .library(name: "ROIEnc", targets: ["AgoraFDExtension"]),
+        .library(name: "FullAudioFormat", targets: ["AgoraFullAudioFormatExtension"]),
+        .library(name: "JND", targets: ["AgoraJNDExtension"]),
+        .library(name: "ReplayKit", targets: ["AgoraReplayKitExtension"]),
+        .library(name: "SuperResolution", targets: ["AgoraSuperResolutionExtension"]),
+        .library(name: "VideoPreprocess", targets: ["AgoraVideoProcessExtension"]),
+        .library(name: "VirtualBackground", targets: ["AgoraVideoSegmentationExtension"])
     ],
     targets: [
         .binaryTarget(
@@ -120,6 +99,6 @@ let package = Package(
             name: "AgoraVideoSegmentationExtension",
             url: "https://download.agora.io/swiftpm/AgoraRtcEngine_iOS/3.6.2/AgoraVideoSegmentationExtension.xcframework.zip",
             checksum: "2363c246b8a8bc07dc5de99b730695f5c1ff68b3ad12c2a0ccfb93cbd5294a7d"
-        ),
+        )
     ]
 )

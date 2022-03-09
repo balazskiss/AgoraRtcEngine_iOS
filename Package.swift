@@ -10,6 +10,7 @@ let package = Package(
     products: [
         .library(
             name: "AgoraRtcKit",
+            type: .dynamic,
             targets: [
                 "AgoraAIDenoiseExtension","AgoraCIExtension","AgoraCore","AgoraDav1dExtension","AgoraFDExtension","Agorafdkaac","Agoraffmpeg","AgoraFullAudioFormatExtension","AgoraJNDExtension","AgoraReplayKitExtension","AgoraRtcKit","AgoraSoundTouch","AgoraSuperResolutionExtension","AgoraVideoProcessExtension","AgoraVideoSegmentationExtension"
             ]
